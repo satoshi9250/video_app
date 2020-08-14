@@ -10,7 +10,10 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
+    @comment = Comment.new
+    @comments = @post.comments.includes(:user)
   end
+
 
   # GET /posts/new
   def new
@@ -72,6 +75,6 @@ class PostsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def post_params
-      params.require(:post).permit(:body, :youtube_url)
+      params.require(:post).permit(:nicknam, :body, :youtube_url).merge(user_id: current_user.id)
     end
 end
