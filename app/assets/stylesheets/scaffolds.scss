@@ -1,16 +1,20 @@
 body {
-  background-color: #fff;
+  background-image: url(messala-ciulla-iajsWsOZNWk-unsplash.jpg);
+  background-size: 100vw;
   color: #333;
-  margin: 33px;
+  margin: 0px 0px;
+  padding: 0px 20px;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
+  height: 100vw;
 }
 
 p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
+  color: white;
 }
 
 pre {
@@ -20,11 +24,8 @@ pre {
 }
 
 a {
-  color: #000;
-
-  &:visited {
-    color: #666;
-  }
+  color: white;
+  text-decoration: none;
 
   &:hover {
     color: #fff;
@@ -32,12 +33,19 @@ a {
   }
 }
 
+table {
+  margin-left: 300px;
+}
+
 th {
   padding-bottom: 5px;
+  color: white;
+  font-size: 30px;
 }
 
 td {
   padding: 0 5px 7px;
+  font-size: 30px;
 }
 
 div {
@@ -80,5 +88,31 @@ div {
 }
 
 label {
+  color: white;
+}
+
+h1 {
+  color: white;
+
+}
+.box {
+  margin: 300px 600px;
+}
+
+label {
   display: block;
+}
+
+textarea {
+  width: 200px;
+}
+
+input {
+  margin-bottom: 5px;
+  font-size: 10px;
+}
+
+input#post_youtube_url {
+  width: 200px;
+  height: 30px;
 }
